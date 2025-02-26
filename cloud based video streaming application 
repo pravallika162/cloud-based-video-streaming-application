@@ -1,0 +1,87 @@
+INTRODUCTION TO VIDEO STREAMING 
+
+video streaming is the delivery of video content over the internet allowing users to view video in real time without downloading them 
+
+IMPORTANCE OF CLOUD COMPUTING 
+. The cloud offers scalability, reliability and on demand resources management for video streaming application 
+
+INTERNSHIP OVERVIEW 
+. Role focused on backend and API development 
+. Contribution to designing and developing the infrastructure behind video streaming services 
+
+TECHNOLOGIES USED 
+. Backend development,APIs integration, cloud based services 
+
+
+WHAT IS CLOUD BASED STREAMING 
+
+DEFINITION:
+A cloud based video streaming services delivers video content through the internet, using cloud resource to store and distribute content. 
+
+BENEFITS:
+SCALABILITY: Resources scale according to user demand. 
+ACCESSIBILITY: Available on any device connected to the internet.
+RELIABILITY: Content is served from globally distributed servers,ensuring high uptime. 
+POPULAR EXAMPLES:
+NETFLIX, YOUTUBE,HULU, AMAZON PRIME VIDEO 
+
+KEY COMPONENTS OF A VIDEO STREAMING APPLICATION 
+
+FRONTEND:
+.User interface for video playback, search, recommendations, and interaction.
+platforms like web apps, mobile apps, and smart Tvs.
+
+BACKEND:
+.Server side infrastructure that handles data processing, user management, and content storage.
+
+APIs:
+. Provide communication between the frontend and backend services (user authentication, video data).
+
+
+TECHNOLOGIES USED IN CLOUD BASED VEDIO STREAMING 
+
+CLOUD PLATFORM:
+AWS ( AMAZON WEB SERVICES), GOOGLE CLOUD, MICROSOFT AZURE.
+
+BACKEND LANGUAGES:
+Node.js, Python, Java.
+APIS:
+RESTFUL APIs,Graph QL.
+
+DATABASE:
+NoSQL: MongoDB, Cassandra for scalable data storage 
+SQL: MySQL, PostgreSQL for relational data storage.
+
+VIDEO TRANSCODING:
+. FFmpeg for transcoding video into different formats for adaptive streaming 
+.AWS elemental media convert for high quality transcoding.
+CDN:
+Amazon cloud front, Akamai for fast global content delivery.
+
+BACKEND ARCHITECTURE FOR VIDEO STREAMING 
+MICROSERVICES ARCHITECTURE:
+. Backend is divided into small, independent services for better maintainability.
+.separate services for video management, user profiles, playback control.
+
+APIs:
+. Authentication APIs:Manages user authentication (JWT,OAuth).
+. VIDEO MANAGEMENT API: Handles video upload,metadata,and categorisation.
+. STREAMING API: Delivers video content based on user request using HLS
+(HTTP live streaming)or 
+DASH(Dynamic Adaptive Streaming over HTTP)
+
+DATABASE MANAGEMENT:
+.Stores video metadata,user profiles, and video statistics.
+MongoDB or PostgreSQL for data storage 
+
+API DEVELOPMENT FOR VIDEO STREAMING 
+
+ROLE OF APIs:
+AUTHENTICATION API: Handles user registration,login,and token management.
+VIDEO UPLOAD API:Manages video metadata, categorisation,and storage location. 
+STREAMING API: Request video chunks from the cloud and delivers them to the client in real -time.
+
+
+
+
+
