@@ -57,4 +57,12 @@ VIDEO TRANSCODING
 .AWS elemental media convert for high quality transcoding 
 
 CDN:
-Amazon cloud front,Akamai for fast global content delivery 
+Amazon cloud front,Akamai for fast global content delivery
+
+BACKEND ARECHITECTURE FOR VIDEO STREAMING
+Microservices Arechitecture
+.backend is divided into small ,independent services for better maintainability
+.separate services for video management, user profile,playback control
+
+APIs:
+.Authentication API:Manages user
