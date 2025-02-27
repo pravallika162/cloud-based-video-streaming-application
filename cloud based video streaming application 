@@ -1,3 +1,6 @@
+CLOUD BASED VEDIO STREAMING APPLICATION 
+
+
 INTRODUCTION TO VIDEO STREAMING 
 
 video streaming is the delivery of video content over the internet allowing users to view video in real time without downloading them 
@@ -80,6 +83,57 @@ ROLE OF APIs:
 AUTHENTICATION API: Handles user registration,login,and token management.
 VIDEO UPLOAD API:Manages video metadata, categorisation,and storage location. 
 STREAMING API: Request video chunks from the cloud and delivers them to the client in real -time.
+
+KEY CONSIDERATIONS:
+. Efficient data transfer to reduce latency and improve user experience.
+. Securing APIs to prevent unauthorised access to sensitive user data.
+. Scalability to handle a large number of requests per second.
+TECH STACK:
+. Express.js for API server.
+. MongoDB for storing video metadata.
+.JWT for secure token-based authentication.
+
+CHALLENGES IN BACKEND/API DEVELOPMENT:
+SCALABILITY:
+.Handling millions of concurrent users, especially during peak times.
+LATENCY:
+.Minimising video buffering to provide smooth playback.
+SECURITY:
+.Ensuring content is protected from privacy,user data is encrypted.
+API RATE LIMITING:
+.Preventing overload and ensuring that APIs function without delay.
+INTEGRATION:
+. Ensuring that APIs work smoothly across multiple devices and platforms.
+( IOS, Android,Web).
+
+SOLUTIONS & BEST PRACTICES:
+.LAOD BALANCING:
+Distributed traffic across multiple servers to ensure that no single server is overwhelmed.
+.CDN INTEGRATION:
+Use cloud front, Akamai,or similar services to distribute video content globally, reducing latency.
+. CACHING:
+Implement caching strategies at various level (API,CDN)to minimize database load and reduce latency.
+.API OPTIMIZATION:
+Use asynchronous APIs and pagination to manage large datasets and reduce client side wait times.
+.SECURITY MEASURES:
+HTTPs for secure communication.
+OAuth and JWT for secure authentication.
+Encryption of sensitive data.
+
+CONCLUSION & FUTURE PROSPECTS:
+
+SUMMARY:
+.Key takeaway : The cloud and APIs play a critical role in making video streaming scalable and efficient.
+ Future trends:
+.AI/ML Integration: Personalized recommendations, content prediction.
+.Video compression:New codecs for higher quality and faster streaming.
+.Edge computing: Placing resources closer to user for reduced latency.
+
+
+
+
+
+
 
 
 
