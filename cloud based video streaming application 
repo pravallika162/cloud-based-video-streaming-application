@@ -45,6 +45,31 @@ TECHNOLOGIES USED IN CLOUD BASED VEDIO STREAMING
 
 CLOUD PLATFORM:
 AWS ( AMAZON WEB SERVICES), GOOGLE CLOUD, MICROSOFT AZURE.
+AWS: cloud-based video streaming using python 
+This example uses AWS S3,AWS lambda,and AWS API Gateway to create a cloud-Based video streaming application.
+import boto3
+import json
+
+S3=boto3.client('s3’)
+lambda_client=
+boto3.client('lambda’)
+
+def
+lambda_handler(event, context):
+   #Get the video file from S3
+   video _file =
+s3.get _object(Bucket='my-bucket’,
+key='video.mp4’)
+
+  #Stream the video file 
+  return {
+          'statuscode’:
+200,
+      'body': video _file['Body’].read(),
+           'headers’:{
+'content-Type’: 'video/mp4’
+ }
+    }
 
 BACKEND LANGUAGES:
 Node.js, Python, Java.
