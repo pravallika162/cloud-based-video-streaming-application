@@ -14,7 +14,45 @@ INTERNSHIP OVERVIEW
 
 TECHNOLOGIES USED 
 . Backend development,APIs integration, cloud based services 
-
+#Import flask,a popular web frame work for python from flask import Flask, render_templet, request, redirect,url_for
+#import AWS SDK for python (Boto3) for interacting with AWS services import boto3
+#import the Google cloud client library for interacting with google cloud services from google.cloud import storage 
+#import the azure storage Blog client library for interacting with Azure storage from azure.storage.blob
+import blob services client 
+#import the IBM cloud objects storage client library for interacting with the IBM cloud object storage 
+from
+ibm cloudant.cloudant_v1
+import cloudant v1
+#import the openCV 
+library for video processing and streaming import cv2
+#import the
+Flask -socketIO
+library for real time communication and streaming from flask _scoketio 
+import socketIO ,emit
+#import the threading the library for concurrent execution for task import threading 
+#import the logging library for logging and debugging
+import debugging 
+#importing specific modules 
+# import the AWS S3
+module for interacting with AWS S3 from boto3.S3 import S3
+#import the Google cloud storage module for interacting with google cloud storage 
+from 
+google.cloud.storage
+import client 
+import the azure storage blob module for interacting with Azure storage 
+from azure.storage.bolb
+import BolbClient 
+import the IBM cloud object storage module for interacting with IBM cloud object storage 
+from 
+ibm cloudant.cloudant_V1
+import cloudantV1
+#import the openCV 
+video capture module for capturing video from cameras or files 
+from Cv2 import video capture 
+#import the  
+Flask-socket IO namesspace module for defining namesspace for real-time communication
+from flask_socketIO
+import Namespace 
 WHAT IS CLOUD BASED STREAMING 
 DEFINITION:
 A cloud based video streaming services delivers video content through the internet, using cloud resource to store and distribute content. 
