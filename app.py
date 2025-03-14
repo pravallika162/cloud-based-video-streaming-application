@@ -118,3 +118,52 @@ def video_streaming(request):
 
 # Stream the video file 
 return send _file(file.get()[‘body’].read(),mimetype=‘video/mp4’)
+
+import cv2
+
+#open the default camera ( index 0 )
+cap = cv2.videocapture(0)
+
+while True:
+     # read a frame from the camera
+     ref,frame = cap.read()
+
+  # check if the frame was read successfully 
+if not yet:
+     break
+
+  # Display the frame in a window 
+ cv2.inshow(‘video stream’,frame)
+
+  # check for the 'q’ key to exit the loop
+if cv2.waitkey(1) & 0xff == ord(‘q’):
+    break
+
+ # Release the camera and close the window 
+cap.release()
+Cv2.destroyAllWindow()
+
+Using pyAV to stream video over a network:
+
+import av
+
+# create a video stream
+stream = av.open(‘video.mp4’,mode=‘r’)
+
+# create a network stream
+net_stream = av.open(‘rtmp://localhost:1935/stream’,mode=‘w’)
+
+while True:
+     # Read a frame from the video stream 
+    frame = stream.decode_video()
+
+ # check if the frame was read successfully 
+if not frame:
+  break
+
+ # Encode the frame and send it over the network 
+net_stream.encode(frame)
+
+# Close the streams
+stream.close()
+net_stream.close()
