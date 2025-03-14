@@ -49,3 +49,72 @@ templates/index.html
    </from>
  </body>
 </html>
+
+import boto3
+import json 
+
+S3 = boto3.client(‘s3’)
+lambda_client = boto3.client(‘lambda’)
+
+def lambda _handler ( event,context):
+    #Get the video file from S3 
+    video _file = s3.get _object(Bucket=‘my-bucket’,key=‘video.mp4’)
+
+#Stream the video file 
+return {
+      ‘statuscode’:200,
+      ‘body’: video_ file [‘body’].read(),
+      ‘haeders’: {
+           ‘content-Type’: ‘video/mp4’
+      } 
+  }
+
+2.Google cloud-based video streaming application using python 
+
+import os
+from google.cloud import storage 
+from flask import send_file
+
+client = storage.client()
+
+def video_streaming(request):
+    #Get the video file from cloud storage 
+    bucket = client.get_bucket(‘my-bucket’)
+  blob = bucket.get_blob(‘video.mp4’)
+
+  #Stream the video file 
+return send_file(blob.download_as_string(),mimetype=‘video/mp4’)
+
+3.Microsoft Azure cloud-based video streaming using python uses Azure blob storage, Azure function and Azure API management 
+
+import os
+import azure.functions as function
+from azure.storage.blob import Blob services client
+
+blob_service_client = 
+Blobserviceclient.from_connection_string(os.environ[‘AZURE_STORAGE_CONNECTION_STRING’])
+
+def main(req: function.HttpResponse:
+   # Get the video file from Blob storage 
+   blob_client = blob_client.gey_blob_client(container=‘my-container’,blob=‘video.mp4’(
+
+  # Stream the video file 
+ return 
+func.HttpResponse(body=blob_client.downloader_blob(). content _as_bytes(),mimetype=‘video/mp4’)
+
+4.IBM CLOUD BASED VIDEO STREAMING USING PYTHON 
+IBM cloud object storage,IBM cloud functions,and IBM cloud API
+
+import os
+from ibmcloudant.cloudant_v1 import cloudantV1 
+from flask import send_file
+
+client = cloudantV1.new_instance()
+
+def video_streaming(request):
+    # Get the video file from cloud object storage 
+  bucket = client.get_bucket(‘my-bucket’)...
+ file = bucket.get_object(‘video.mp4’)
+
+# Stream the video file 
+return send _file(file.get()[‘body’].read(),mimetype=‘video/mp4’)
